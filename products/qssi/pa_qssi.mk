@@ -25,7 +25,9 @@ $(call inherit-product, device/qcom/qssi/qssi.mk)
 PRODUCT_NAME := pa_qssi
 
 # Paranoid Android platform
-include vendor/pa/main.mk
+include device/qcom/common/common.mk
+include vendor/pa/config/common_full_phone.mk
+
 
 endif
 
