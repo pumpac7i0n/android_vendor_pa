@@ -13,16 +13,13 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_qssi,$(TARGET_PRODUCT))
+ifeq (qssi,$(TARGET_PRODUCT))
 
 # Include Paranoid Android common configuration
 TARGET_BOOT_ANIMATION_RES := 1440
 
 # Inherit device configuration
 $(call inherit-product, device/qcom/qssi/qssi.mk)
-
-# Override AOSP build properties
-PRODUCT_NAME := pa_qssi
 
 # Paranoid Android platform
 include device/qcom/common/common.mk
